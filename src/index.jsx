@@ -123,7 +123,7 @@ const checkNormalVisible = function checkNormalVisible(component) {
  */
 const checkVisible = function checkVisible(component) {
   const node = component.ref;
-  if (!(node instanceof HTMLElement)) {
+  if (!React.isValidElement(node))) {
     return;
   }
 
