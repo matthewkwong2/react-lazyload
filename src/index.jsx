@@ -294,12 +294,7 @@ class LazyLoad extends Component {
   render() {
     return this.visible
       ? this.props.children
-      : this.props.placeholder
-        ? React.cloneElement(
-          this.props.placeholder,
-          { ref: this.setRef }
-        )
-        : <div
+      : <div
           style={{ height: this.props.height }}
           className="lazyload-placeholder"
           ref={this.setRef}
